@@ -5,3 +5,4 @@ pandas
 requests
 logzero
 pyotp
+websocket-client
