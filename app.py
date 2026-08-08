@@ -1,3 +1,4 @@
+from streamlit_autorefresh import st_autorefresh
 import streamlit as st
 import pandas as pd
 import pyotp
@@ -9,7 +10,8 @@ from telegram_bot import send_telegram_alert
 # Page Setup
 st.set_page_config(page_title="Angel One EMA Scanner", layout="wide")
 st.title("⚡ Angel One Multi-Timeframe EMA Crossover & Telegram Alert App")
-
+# दर ६० सेकंदांनी (१ मिनिट) पेज ऑटो-रिफ्रेश होईल
+count = st_autorefresh(interval=60000, limit=None, key="ema_scanner_autorefresh")
 # SIDEBAR - LOGIN & SETTINGS
 st.sidebar.header("🔑 1. Angel One API Login")
 api_key = st.sidebar.text_input("API Key", type="password")
