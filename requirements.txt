@@ -6,3 +6,4 @@ requests
 logzero
 pyotp
 websocket-client
+streamlit-autorefresh
