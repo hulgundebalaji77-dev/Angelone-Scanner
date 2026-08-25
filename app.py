@@ -283,9 +283,8 @@ with st.sidebar:
         st.success("⚡ Angel One Live Connected!")
       else:
         st.error("❌ चुकीचा MPIN!")
-    except Exception:
-      st.warning("⚠️ API Key/Secret तपासा.")
-
+    except Exception as e:
+      st.error(f'⚠️ लॉगिन एरर तपशील: {e}')
   if st.session_state["smart_api"]:
     st.markdown("🟢 *Status:* Angel One API Live")
   else:
