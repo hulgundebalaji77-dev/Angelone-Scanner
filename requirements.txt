@@ -1,9 +1,8 @@
 smartapi-python
-pytz
-streamlit
-pandas
-requests
-logzero
 pyotp
-websocket-client
-streamlit-autorefresh
+yfinance
+pandas
+ta
+requests
+streamlit
+plotly
