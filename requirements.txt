@@ -7,3 +7,4 @@ requests
 streamlit
 plotly
 logzero
+websocket-client
